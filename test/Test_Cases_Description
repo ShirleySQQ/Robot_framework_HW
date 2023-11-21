@@ -1,0 +1,25 @@
+DB Test HR.Employees
+  case 1: Checking HR.Employees table records count is Correct
+          comparing expected records acount with actual one.
+
+  case 2: Checking hr.employees table's column number is 10
+          get actual column number from schema table and then comparing with expected.
+
+DB Test HR.Departments One
+   Checking department_id is unique
+   comparing all department_id count with dist it count, they should be equal.
+
+DB Test HR.Departments Two
+   Checking cannot insert column value more than max length.
+
+   Checking the department_name's max length.
+
+DB Test HR.sales_data One
+   Checking sales_data negagive rate comparing with expected rate.
+
+   Get all negative amount, then divide total amount, comparing with expected rate, should lower than it.
+
+DB Test HR.sales_data Two
+    Checking sales_data's amount column value is ended with '$'
+
+    Get amount column's end character, then comparing with expected.

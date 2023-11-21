@@ -40,5 +40,7 @@ DB Test HR.sales_data One
    Disconnect From SQL Server
 
 DB Test HR.sales_data Two
+#Checking sales_data's amount column value is ended with '$'
    Connect To SQL Server With Windows Authentication
    Checking sales_data dollerSign
+   Disconnect From SQL Server
