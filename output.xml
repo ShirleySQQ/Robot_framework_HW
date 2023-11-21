@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.18 on win32)" generated="20231121 14:11:04.310" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot framework HW" source="C:\SQQ\DQE_Training\Test AutomationDQE\Robot_framework_HW">
+<suite id="s1-s1" name="Test" source="C:\SQQ\DQE_Training\Test AutomationDQE\Robot_framework_HW\test">
+<suite id="s1-s1-s1" name="Robot Connect Db" source="C:\SQQ\DQE_Training\Test AutomationDQE\Robot_framework_HW\test\robot_connect_db.robot">
+<test id="s1-s1-s1-t1" name="Simple Test Case" line="9">
+<kw name="Log" library="BuiltIn">
+<arg>This is a simple test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231121 14:11:04.363" level="INFO">This is a simple test case</msg>
+<status status="PASS" starttime="20231121 14:11:04.363" endtime="20231121 14:11:04.364"/>
+</kw>
+<status status="PASS" starttime="20231121 14:11:04.363" endtime="20231121 14:11:04.364"/>
+</test>
+<test id="s1-s1-s1-t2" name="DB Test" line="11">
+<kw name="Connect To SQL Server With Windows Authentication" library="common">
+<kw name="Evaluate import pymssql; pymssql.connect(server='${DB_SERVER}', database='${DB_NAME}', trusted=True)">
+<var>${connection}</var>
+<msg timestamp="20231121 14:11:04.366" level="FAIL">No keyword with name 'Evaluate import pymssql; pymssql.connect(server='${DB_SERVER}', database='${DB_NAME}', trusted=True)' found.</msg>
+<status status="FAIL" starttime="20231121 14:11:04.366" endtime="20231121 14:11:04.366"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${connection}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20231121 14:11:04.366" endtime="20231121 14:11:04.366"/>
+</kw>
+<status status="FAIL" starttime="20231121 14:11:04.365" endtime="20231121 14:11:04.366"/>
+</kw>
+<kw name="Run Example Query" library="common">
+<status status="NOT RUN" starttime="20231121 14:11:04.368" endtime="20231121 14:11:04.368"/>
+</kw>
+<kw name="Disconnect From SQL Server" library="common">
+<status status="NOT RUN" starttime="20231121 14:11:04.368" endtime="20231121 14:11:04.368"/>
+</kw>
+<status status="FAIL" starttime="20231121 14:11:04.364" endtime="20231121 14:11:04.369">No keyword with name 'Evaluate import pymssql; pymssql.connect(server='${DB_SERVER}', database='${DB_NAME}', trusted=True)' found.</status>
+</test>
+<status status="FAIL" starttime="20231121 14:11:04.336" endtime="20231121 14:11:04.370"/>
+</suite>
+<status status="FAIL" starttime="20231121 14:11:04.333" endtime="20231121 14:11:04.372"/>
+</suite>
+<status status="FAIL" starttime="20231121 14:11:04.312" endtime="20231121 14:11:04.374"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Robot framework HW">Robot framework HW</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s1" name="Test">Robot framework HW.Test</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s1-s1" name="Robot Connect Db">Robot framework HW.Test.Robot Connect Db</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
